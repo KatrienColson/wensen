@@ -2,8 +2,7 @@ header{
   background-image: url("../img/kerstbal1.jpg");
   background-color: red;
   width: 100%;
-  height: 25vh;
-  
+  height: 25vh; 
 }
 .text{
   display: flex;
@@ -13,20 +12,15 @@ label{
   text-align: center;
   color: blue;
   font-size: 2em;
+  margin-top: 1em;
+  font-family: 'Special Elite', cursive;
 }
 .form-control{
  padding: 1em 1em;
- 
 }
-
 .box1 {
-  /* The image used */
   background-image: url("../img/rendier.png");
-
-  /* Set a specific height */
   min-height: 500px; 
-
-  /* Create the parallax scrolling effect */
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
@@ -36,17 +30,22 @@ label{
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
-  background-image: linear-gradient(to right,blue, lightblue , white);
+  background-image: linear-gradient(to right,blue, lightblue ,white, white);
 }
 p{
   text-align: center;
   color:darkblue;
   font-size: 2em;
-  font-family: 'Lobster', cursive;
+  font-family: 'Special Elite', cursive;
 }
 h3{
   text-align: center;
-  color: green;
+  color: darkcyan;
   font-size: 4em;
-  font-family: 'Lobster', cursive;
+  font-family: 'Special Elite', cursive;
 }
+/*span{
+  color: darkcyan;
+  writing-mode: vertical-rl;
+  font-size: 1.5em;
+}*/

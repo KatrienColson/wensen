@@ -6,6 +6,8 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link rel="stylesheet" href="resources/css/style.css">
   <link href="https://fonts.googleapis.com/css?family=Lobster&display=swap" rel="stylesheet"> 
+  <link href="https://fonts.googleapis.com/css?family=Lobster|Special+Elite&display=swap" rel="stylesheet"> 
+  
   <title>Wensen</title>
 </head>
 <body>
@@ -26,10 +28,11 @@
             <h3><!-- Your message comes here--></h3>
         </div>
           
-        <p>Maak van de feestdagen een magische tijd.</p>
+        <p>Maak van de feestdagen een <span>magische</span> tijd.</p>
         <p>Geniet, dans, schitter en straal!</p>
         <p>Kies er niet eentje, maar doe ze dit jaar allemaal!</p>
-        <p>Groetjes, Katrien</p>
+        <p>Groetjes,</p>
+        <p id="alles">Dieter, Stiene, Nico & Katrien</p>
         
       </div>
     </div>
@@ -43,12 +46,45 @@
         let x = input.value;  
    
         if (x == ""){
-            output.innerHTML=("sorry nothing to show");
-        } else {
+            output.innerHTML=("Hohoho");
+            
+        }
+        else if (x=== "Dieter"|| x==="Stiene" || x==="dieter" || x==="stiene"){
+          document.getElementById("alles").innerHTML = "Mama xxx &#9924; &#9752;"
+          output.innerHTML = x
+        }
+        else if (x=== "Carlos"|| x==="Ann" || x==="John" || x==="carlos" || x==="ann" || x==="john"){
+          document.getElementById("alles").innerHTML = "Dieter, Stiene, Nico & je liefste zusje &#9752;"
+          output.innerHTML = x
+        }
+        else if (x==="Veerle" || x==="veerle"){
+          document.getElementById("alles").innerHTML = "Dieter, Stiene, Nico & je schoonzusje &#9924;"
+          output.innerHTML = x
+        }
+        else if (x==="Patrick" || x==="patrick"){
+          document.getElementById("alles").innerHTML = "Dieter, Stiene, Nico & je liefste \"SCHOON\"zusje, dat krijg je ervan als je \"Javascript\" kent! &#9786; &#9924;"
+          output.innerHTML = x
+        }
+        else if (x==="Seb" || x==="seb" || x==="Sébastien" || x==="sébastien"){
+          document.getElementById("alles").innerHTML = "Dieter, Stiene, Nico & van je aller beste meter tante Katrien &#9924;"
+          output.innerHTML = x
+        }
+        else if (x==="pap" || x==="jef" || x==="papa" || x==="Jef"){
+          document.getElementById("alles").innerHTML = "Dieter, Stiene, Nico & je liefste dochter &#9752;"
+          output.innerHTML = x
+        }
+        else if (x==="Nico" || x==="nico"){
+          document.getElementById("alles").innerHTML = "van mij &#10084; &#9924; 	"
+          output.innerHTML = x
+        }
+         else {
             output.innerHTML = x
         }
     }
    
+
+
+
    
 </script>
 </html>

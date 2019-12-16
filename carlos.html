@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="resources/css/carlos.css">
+  <link href="https://fonts.googleapis.com/css?family=Lobster&display=swap" rel="stylesheet"> 
+  <link href="https://fonts.googleapis.com/css?family=Lobster|Special+Elite&display=swap" rel="stylesheet"> 
+  
+  <title>Wensen</title>
+</head>
+<body>
+  <header>     
+    <div class="row">
+        <div class="text">
+            <label for="greetingsBox">Type your name here: <input type="text"  id="greetingsBox" class="form-control"/></label>
+        </div> 
+    </div>
+  </header>
+  <main>
+    <div class="container1">         
+      <div class="box1">
+      </div>
+      <div class="screen">
+        <div class="box2"> 
+          <div class="greetingsBoxHolder">
+              <h3><!-- Your message comes here--></h3>
+          </div>
+          <p>Maak van de feestdagen een <span>magische</span> tijd.</p>
+          <p>Geniet, dans, schitter en straal!</p>
+          <p>Kies er niet eentje, maar doe ze dit jaar allemaal!</p>
+          <p>Groetjes,</p>
+          <p id="alles" style="text-align:center">Dieter, Stiene, Nico & Katrien</p>
+        </div>
+      </div>
+    </div>
+  </main>
+</body>
+<script>
+    let input = document.getElementById("greetingsBox");
+    let output = document.querySelector(".greetingsBoxHolder h3");
+    input.addEventListener("keyup", myFunction);
+    function myFunction (){
+        let x = input.value;  
+   
+        if (x == ""){
+            output.innerHTML=("Hohoho"); 
+        }
+        else if (x=== "Carlos"||x==="carlos"){
+          document.getElementById("alles").innerHTML = "Dieter, Stiene, Nico & je liefste zusje &#9752; dat krijg je ervan als je zus \"langs dich doer gijt\"."
+          output.innerHTML = x
+        }
+         else {
+            output.innerHTML = x
+        }
+    }
+   
+
+
+
+   
+</script>
+</html>
