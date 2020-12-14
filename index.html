@@ -14,10 +14,11 @@
   <header>     
     <div class="row">
         <div class="text">
-            <label for="greetingsBox">Type your name here: <input type="text"  id="greetingsBox" class="form-control"/></label>
-            <p>scrol dan naar beneden</p>
-          </div> 
-        
+          <fieldset class="extra-info">
+            <legend>Type je naam in en scrol naar onder</legend>
+            <label for="greetingsBox">Naam<input type="text"  id="greetingsBox" class="form-control"/></label>
+          </fieldset>
+        </div> 
     </div>
   </header>
   <main>
@@ -27,16 +28,15 @@
 
       <div class="box2"> 
         <div class="greetingsBoxHolder">
-            <h3><!-- Your message comes here--></h3>
+          <h3><!-- Your message comes here--></h3>
         </div>
-          
-        <p>Maak van de feestdagen een <span>magische</span> tijd.</p>
-        <p>Geniet, dans, schitter en straal!</p>
-        <p>Kies er niet eentje, maar doe ze dit jaar allemaal!</p>
-        <p>Groetjes,</p>
-        <p id="alles">Dieter, Stiene, Nico & Katrien</p>
-        
-      </div>
+          <p>Maak van de feestdagen een <strong>magische</strong> tijd.</p>
+          <p>Geniet, dans, schitter en straal!</p>
+          <p>Kies er niet eentje, maar doe ze dit jaar allemaal!</p>
+          <p>Groetjes,</p>
+          <p id="alles">Dieter, Stiene, Nico & Katrien</p>
+          <h1 class="ml12">Fijne kerstdagen & Gelukkig Nieuwjaar!</h1>
+     </div>
     </div>
   </main>
 </body>
@@ -48,8 +48,7 @@
         let x = input.value;  
    
         if (x == ""){
-            output.innerHTML=("Hohoho");
-            
+            output.innerHTML=("Hohoho");  
         }
         else if (x=== "Dieter"|| x==="Stiene" || x==="dieter" || x==="stiene"){
           document.getElementById("alles").innerHTML = "Mama xxx &#9924; &#9752;"
@@ -83,14 +82,50 @@
           document.getElementById("alles").innerHTML = "Dieter, Stiene, Nico & je liefste nichtje Katrien &#9752;"
           output.innerHTML = x
         }
+        else if (x==="Danny" || x==="danny"){
+          document.getElementById("alles").innerHTML = "Katrien &#9752;"
+          output.innerHTML = x
+        }
+        else if (x==="Niels" || x==="niels"){
+          document.getElementById("alles").innerHTML = "Katrien &#9752;"
+          output.innerHTML = x
+        }
+        else if (x==="Dominique" || x==="dominique"){
+          document.getElementById("alles").innerHTML = "Katrien &#9752;"
+          output.innerHTML = x
+        }
+        else if (x==="Stef" || x==="stef"){
+          document.getElementById("alles").innerHTML = "Katrien &#9752;"
+          output.innerHTML = x
+        }
          else {
             output.innerHTML = x
         }
     }
-   
-
-
-
-   
+  
 </script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+<script>
+  // Wrap every letter in a span
+  var textWrapper = document.querySelector('.ml12');
+  textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
+  
+  anime.timeline({loop: true})
+    .add({
+      targets: '.ml12 .letter',
+      translateX: [40,0],
+      translateZ: 0,
+      opacity: [0,1],
+      easing: "easeOutExpo",
+      duration: 1200,
+      delay: (el, i) => 500 + 30 * i
+    }).add({
+      targets: '.ml12 .letter',
+      translateX: [0,-30],
+      opacity: [1,0],
+      easing: "easeInExpo",
+      duration: 1100,
+      delay: (el, i) => 100 + 30 * i
+    });
+  </script>
 </html>

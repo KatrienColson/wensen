@@ -1,12 +1,23 @@
+@import url("https://fonts.googleapis.com/css2?family=Marcellus&display=swap");
+
 header{
-  background-image: url("../img/kerstbal1.jpg");
-  background-color: red;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+	justify-content: center;
+  background-color: white;
   width: 100%;
-  height: 30vh; 
+  height: 10vh;
+  padding-top: 20px;
+}
+legend{
+  font-family: "Marcellus", serif, "Arial", serif;
+  font-size: 1.5rem;
+  color: grey;  
 }
 header p{
   padding-top: 2em;
-  color: blue;
+  color: grey;
   text-align: left;
 }
 .text{
@@ -15,43 +26,55 @@ header p{
 }
 label{
   text-align: left;
-  color: blue;
+  color: grey;
   font-size: 2em;
   margin-top: 1em;
-  font-family: 'Special Elite', cursive;
+  font-family: "Marcellus", serif, "Arial", serif;
 }
 .form-control{
- padding: 1em 1em;
+ padding: 1em 10em;
 }
-
 .box1 {
-  background-image: url("../img/rendier.png");
-  min-height: 500px; 
+  background-image: url("../img/snowman.jpg");
+  min-height: 800px; 
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  overflow: hidden;
+  border-radius: 0 0 65% 65% / 50%;
 }
 .box2{
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
-  background-image: linear-gradient(to right,blue, lightblue ,white, white);
+  /*background-image: linear-gradient(to right,#89a2c0, lightgrey ,white, white);*/
+  padding-bottom: 10px;
 }
 p{
   text-align: center;
-  color:darkblue;
+  color:#89a2c0;
   font-size: 2em;
-  font-family: 'Special Elite', cursive;
+  font-family: "Marcellus", serif, "Arial", serif;
 }
 h3{
   text-align: center;
-  color: darkcyan;
+  color: #89a2c0;
   font-size: 4em;
-  font-family: 'Special Elite', cursive;
+  font-family: "Marcellus", serif, "Arial", serif;
 }
-/*span{
-  color: darkcyan;
-  writing-mode: vertical-rl;
-  font-size: 1.5em;
-}*/
+.ml12 {
+  font-family: "Marcellus", serif, "Arial", serif;
+  background-color: #89a2c0;
+  color: #ffffff;
+  font-weight: 200;
+  font-size: 2em;
+  text-transform: uppercase;
+  letter-spacing: 0.5em;
+  padding: 20px;
+  text-align: center;
+}
+.ml12 .letter {
+  display: inline-block;
+  line-height: 1em;
+}
